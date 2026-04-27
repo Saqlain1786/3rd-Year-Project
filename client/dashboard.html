@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="/dashboard.html">Dashboard</a>
+      <a href="/attendance.html">Mark Attendance</a>
+      <a href="/report.html">View Report</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </div>
+
+    <div class="card">
+      <h2>Welcome, <span id="userName"></span></h2>
+      <p>Use this page to add students and view all students.</p>
+      <div id="alertBox"></div>
+    </div>
+
+    <div class="card">
+      <h3>Add Student</h3>
+      <form id="studentForm">
+        <div class="grid">
+          <input type="text" id="studentName" placeholder="Student Name" required />
+          <input type="text" id="rollNumber" placeholder="Roll Number" required />
+          <input type="text" id="studentClass" placeholder="Class" required />
+        </div>
+        <button type="submit">Add Student</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>All Students</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Roll Number</th>
+              <th>Class</th>
+            </tr>
+          </thead>
+          <tbody id="studentsTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
