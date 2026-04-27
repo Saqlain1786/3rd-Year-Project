@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mark Attendance</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="/dashboard.html">Dashboard</a>
+      <a href="/attendance.html">Mark Attendance</a>
+      <a href="/report.html">View Report</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </div>
+
+    <div class="card">
+      <h2>Mark Attendance</h2>
+      <div id="alertBox"></div>
+      <input type="date" id="attendanceDate" />
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Roll Number</th>
+              <th>Class</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="attendanceTableBody"></tbody>
+        </table>
+      </div>
+      <button id="submitAttendance" class="success">Submit Attendance</button>
+    </div>
+  </div>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/attendance.js"></script>
+</body>
+</html>
